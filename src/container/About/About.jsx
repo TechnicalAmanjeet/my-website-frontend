@@ -3,42 +3,42 @@ import React, {useState, useEffect} from 'react';
 import './About.scss';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
-import { client, urlFor } from '../../client';
 
-// const abouts = [
-//   {
-//     title: "Web Development",
-//     description: "I am a good Web Developer",
-//     imageUrl: images.about01
-//   },
-//   {
-//     title: "Frontend Development",
-//     description: "I am a good Web Designer",
-//     imageUrl: images.about02
-//   },
-//   {
-//     title: "Backend Development",
-//     description: "I am a good UI/UX Designer",
-//     imageUrl: images.about03
-//   },
-//   {
-//     title: "MERN Stack",
-//     description: "I am a good full Stack  Developer",
-//     imageUrl: images.about04
-//   },
-// ]
+
+const abouts = [
+  {
+    title: "Web Development",
+    description: "I am a good Web Developer",
+    imageUrl: images.about01
+  },
+  {
+    title: "Frontend Development",
+    description: "I am a good Web Designer",
+    imageUrl: images.about02
+  },
+  {
+    title: "Backend Development",
+    description: "I am a good UI/UX Designer",
+    imageUrl: images.about03
+  },
+  {
+    title: "MERN Stack",
+    description: "I am a good full Stack  Developer",
+    imageUrl: images.about04
+  },
+]
 
  const About = () => { 
   
-  const [abouts, setAbouts] = useState([]);
+  // const [abouts, setAbouts] = useState([]);
 
-  useEffect(() => {
-    const query = '*[_type == "abouts"]';
+  // useEffect(() => {
+  //   const query = '*[_type == "abouts"]';
 
-    client.fetch(query).then( (data) => {
-      setAbouts(data);
-    })
-  }, [])
+  //   client.fetch(query).then( (data) => {
+  //     setAbouts(data);
+  //   })
+  // }, [])
   
 
   return (
