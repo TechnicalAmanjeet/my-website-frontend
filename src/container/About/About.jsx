@@ -30,6 +30,8 @@ const abouts = [
 
  const About = () => { 
   
+
+  
   // const [abouts, setAbouts] = useState([]);
 
   // useEffect(() => {
